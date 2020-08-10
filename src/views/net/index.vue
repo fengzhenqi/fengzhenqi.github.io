@@ -136,6 +136,7 @@ export default {
     position: relative;
     top: 25px;
     width: 80%;
+    min-height: calc(100% - 50px);
     background: #fff;
     box-sizing: border-box;
     border-radius: 20px 0px 20px 0px;
@@ -147,8 +148,8 @@ export default {
     h2 {
       text-align: center;
       font-size: 28px;
-      height: 40px;
-      line-height: 40px;
+      height: 70px;
+      line-height: 70px;
       color: #fff;
     }
 
