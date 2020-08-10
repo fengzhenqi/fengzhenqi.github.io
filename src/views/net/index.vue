@@ -1,12 +1,10 @@
 <template>
-  <div class="net">
     <div class="net-content">
       <h2>开发</h2>
       <ul>
         <li v-for="(item, index) in list" :key="index" @click="open(item.url)">{{item.name}}</li>
       </ul>
     </div>
-  </div>
 </template>
 
 <script>
@@ -139,48 +137,47 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.net {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, .4);
-  
-
+  body{
+    background: #eee;
+  }
   h2 {
     text-align: center;
     font-size: 28px;
     height: 40px;
     line-height: 40px;
+    color: #fff;
   }
-
   .net-content {
     width: 80%;
-    min-height: calc(100% - 40px);
+    height: 100%;
     background: #fff;
     padding: 24px;
     box-sizing: border-box;
     border-radius: 20px 0px 20px 0px;
-    position: absolute;
-    left: 10%;
-    top: 20px;
-    overflow: hidden;
+    overflow-x: hidden;
+    margin: 20px auto;
+    background: #000;
     
     ul {
       width: 100%;
-      height: 100%;
-
+      min-height: calc(100% - 40px);
       li {
         width: 50%;
         height: 40px;
         line-height: 40px;
-        float: left;
         text-align: center;
+        float: left;
         cursor: pointer;
         color: rgb(243, 128, 51);
+        @media only screen and (max-width: 540px) {
+          width: 100%;
+        }
+
         &:hover {
           color: #42b983;
         }
+        
       }
     }
   }
-}
 </style>
