@@ -140,27 +140,28 @@ export default {
   body{
     background: #eee;
   }
-  h2 {
-    text-align: center;
-    font-size: 28px;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-  }
   .net-content {
+    position: relative;
+    top: 25px;
     width: 80%;
-    height: 100%;
     background: #fff;
-    padding: 24px;
     box-sizing: border-box;
     border-radius: 20px 0px 20px 0px;
     overflow-x: hidden;
-    margin: 20px auto;
+    margin: 0 auto;
+    margin-bottom: 25px;
     background: #000;
-    
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      height: 40px;
+      line-height: 40px;
+      color: #fff;
+    }
+
     ul {
       width: 100%;
-      min-height: calc(100% - 40px);
       li {
         width: 50%;
         height: 40px;
@@ -169,6 +170,8 @@ export default {
         float: left;
         cursor: pointer;
         color: rgb(243, 128, 51);
+        overflow: hidden;
+
         @media only screen and (max-width: 540px) {
           width: 100%;
         }
