@@ -101,14 +101,6 @@ export default {
           url: 'https://echarts.apache.org/zh/index.html'
         },
         {
-          name: 'echarts图标',
-          url: 'https://echarts.apache.org/zh/index.html'
-        },
-        {
-          name: 'mongoosejs',
-          url: 'http://www.mongoosejs.net/docs/guide.html'
-        },
-        {
           name: 'mongoosejs',
           url: 'http://www.mongoosejs.net/docs/guide.html'
         },
